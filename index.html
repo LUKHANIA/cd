@@ -8,10 +8,25 @@
     </head> 
     <script src="https://js.paystack.co/v2/inline.js"></script>
   
-<form action="/save-order-and-pay" method="POST"> 
-  <input type="email" name="user_email" value="<?php echo $email; ?>"> 
-  <input type="amount" name="amount" value="<?php echo $amount; ?>"> 
-  <input type="cartid" name="cartid" value="<?php echo $cartid; ?>"> 
+<form action="/save-order-and-pay" method="POST">
+<div class = "form-group">
+    <label for = "user_email"> Email:</label>
+<br>
+  <input type="text" name="user_email" value="<?php echo $email; ?>" required>
+</div>
+    <br>
+<div class ="form-group">
+    <label for = "amount"> Amount:</label> 
+<br> 
+  <input type="text" name="amount" value="<?php echo $amount; ?>" required>
+</div>
+    <br>
+<div class = "form-group"> 
+    <label for = "cartid"> Cart ID:</label>
+<br>
+  <input type="text" name="cartid" value="<?php echo $cartid; ?>" required>
+</div>
+    
   <button type="submit" name="pay_now" id="pay-now" title="Pay now">Pay now</button>
     </form>
 
