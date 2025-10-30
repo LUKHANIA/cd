@@ -6,28 +6,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
     </head> 
-    <script src="https://js.paystack.co/v2/inline.js"></script>
-  
-<form action="/save-order-and-pay" method="POST">
-<div class = "form-group">
-    <label for = "user_email"> Email:</label>
-<br>
-  <input type="text" name="user_email" value="<?php echo $email; ?>" required>
-</div>
-    <br>
-<div class ="form-group">
-    <label for = "amount"> Amount:</label> 
-<br> 
-  <input type="text" name="amount" value="<?php echo $amount; ?>">
-</div>
-    <br>
-<div class = "form-group"> 
-    <label for = "cartid"> Cart ID:</label>
-<br>
-  <input type="text" name="cartid" value="<?php echo $cartid; ?>" required>
-</div>
-    
-  <button type="submit" name="pay_now" id="pay-now" title="Pay now">Pay now</button>
-    </form>
+
+    <div class = "container">
+       <h1>
+         <span>Check Out </span>  
+        <span>$9.99</span>
+           
+       </h1>
+
+        <form action = "receipt.php" method="POST" id="the-form">
+            <div class ="input input-text half-width">
+                <span class ="input-label">First name</span>
+                <input class="input-field" type="text" placeholder="" name="fname" autofocus> 
+            </div>
+
+            <div class ="input input-text half-width">
+                <span class ="input-label">Last name</span>
+                <input class="input-field" type="text" placeholder="" name="lname" autofocus> 
+            </div>
+
+            <div class ="input input-text half-width">
+                <span class ="input-label">First name</span>
+                <input class="input-field" type="text" placeholder="" name="fname" autofocus> 
+            </div>
+        </form>
+    </div>
 
 </html>
