@@ -29,7 +29,6 @@
        <h1>
          <span>Check Out </span>  
         <span>$9.99</span>
-           
        </h1>
 
         <form action = "receipt.php" method="POST" id="the-form">
@@ -46,6 +45,21 @@
             <div class ="input input-text half-width">
                 <span class ="input-label">First name</span>
                 <input class="input-field" type="text" placeholder="" name="fname" autofocus> 
+            </div>
+            
+            <div class = "input input-text half-width">
+                <span class="input-label">Card Number</span>
+                <div id="ccnumber"></div>
+            </div>
+            
+            <div class = "input input-text half-width">
+                <span class="input-label">Expiration Number</span>
+                <div id="ccexp"></div>
+            </div>
+
+            <div class = "input input-text half-width">
+                <span class="input-label">CVV</span>
+                <div id="cvv"></div>
             </div>
             
             <input class = "btn btn-mega" id="payButton" type="submit" value="submit payment">
