@@ -8,7 +8,9 @@ $url = 'https://secure.transactiongateway.com/api/transact.php';
 $vars = "security_key= " 
  "&type=sale" 
  "&amount=9.99" 
- "&first_name"= . $fname
- "&last_name"= . $lname
-  
+ "&first_name=" . $fname
+ "&last_name=" . $lname
+ "&email=". $email
+ "&payment_token=" .$payment_token;
+
   
